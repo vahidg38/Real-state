@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>سامانه خرید و فروش- رهن  و اجاره مسکن |کلید</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" href="shortcut.png" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+$(document).ready(function(){
+ 	$.getJSON( "http://hallows.ir/mags", function( data ) {
+  
+  
+  $.each( data.items[0], function( key, val ) {
+  	if (key=="image") {
+  	 $("#mag1").attr("src",val);
+  	}
+  	if (key=="title") {
+  		 $("#desc1").text(val);
+  	}
+   
+
+  });
+
+   $.each( data.items[1], function( key, val ) {
+  	if (key=="image") {
+  	 $("#mag2").attr("src",val);
+  	}
+  	if (key=="title") {
+  		 $("#desc2").text(val);
+  	}
+  
+
+  });
+  $.each( data.items[2], function( key, val ) {
+  	if (key=="image") {
+  	 $("#mag3").attr("src",val);
+  	}
+  	if (key=="title") {
+  		 $("#desc3").text(val);
+  	}
+  
+
+  });
+   $.each( data.items[3], function( key, val ) {
+  	if (key=="image") {
+  	 $("#mag4").attr("src",val);
+  	}
+  	if (key=="title") {
+  		 $("#desc4").text(val);
+  	}
+  
+
+  });
+  
+});
+ 	
+  
+});
+</script>
+</head>
+<body>
+  
+
+ 
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img id="mag1"  src="1.jpg" alt="error" width="600" height="400">
+  </a>
+  <div id="desc1" class="desc">دلایل عجیب و حتی ترسناک برای اثاث کشی</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img id="mag2" src="2.jpg" alt="error" width="600" height="400">
+  </a>
+  <div id="desc2" class="desc">نکاتی برای خانواده‌ها به مناسبت شروع مدارس دانش آموزان کلاس اولی‌</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_lights.jpg">
+    <img id="mag3" src="3.jpg" alt="error" width="600" height="400">
+  </a>
+  <div id="desc3" class="desc">راهنمای خرید خانه 500میلیونی در تهران</div>
+</div>
+
+<div class="gallery" style="clear: left;">
+  <a target="_blank" href="img_lights.jpg">
+    <img id="mag4" src="3.jpg" alt="error" width="600" height="400">
+  </a>
+  <div id="desc4" class="desc">راهنمای خرید خانه 500میلیونی در تهران</div>
+</div>
+
+
+  
+</body>

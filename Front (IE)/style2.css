@@ -1,0 +1,83 @@
+body{
+	background-image: url("desktop.png");
+}
+ .form1{
+	background-image: url("form.png");
+	z-index: +1;
+	height: 530px;
+	width: 600px;
+	position: relative;
+	left: 400px;
+	top: 100px;
+	font-family: b nazanin;
+	font-size: 20px;
+}
+#enter{
+	position: relative;
+	left: 350px;
+	display: inline;
+	font-weight: bold;
+	top: 50px;
+	border-style: none solid none none;
+	border-color: rgb(179,7,83);
+	color: rgb(179,7,83);
+	padding: 12px;
+
+
+}
+#register{
+	position: relative;
+	left: 340px;
+	display: inline;
+	color: gray;
+	top: 50px;
+	border-style: none solid none none;
+	border-color: gray;
+	padding: 12px;
+	
+
+}
+#register a{
+	text-decoration: none;
+	color: gray;
+}
+
+form.form2{
+
+	position: relative;
+	top: 100px;
+	left: 300px;
+}
+button.send{
+	font-family: b nazanin;
+	background-color: rgb(179,7,83);
+	color: white;
+	border-radius: 10px;
+	width: 100px;
+	height: 40px;
+}
+a.forget{
+	color: blue;
+	text-decoration: none;
+}
+img.cross{
+	border-radius: 40px;
+	height: 30px;
+	border-color: gray;
+	border-style: solid;
+
+}
+.exit{
+	position: absolute;
+	left: 580px;
+	top:0;
+
+}
+span.terms{
+	right:100px;
+	position: relative;
+}
+#checkbox{
+	text-decoration: rtl;
+	background-color: red;
+}

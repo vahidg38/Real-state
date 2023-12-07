@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<link rel="shortcut icon" href="shortcut.png" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		function reg(){
+
+			document.getElementsByName('input1')[0].placeholder='نام';
+			document.getElementsByName('input1')[0].required="required";
+
+			document.getElementsByName('input2')[0].style="display:block;";	
+			document.getElementsByName('input2')[0].placeholder='نام خانوادگی';
+			document.getElementsByName('input2')[0].required="required";
+
+			document.getElementsByName('input3')[0].style="display:block;";	
+			document.getElementsByName('input3')[0].required="required";
+
+			document.getElementsByName('news')[0].style="display:inline;";
+			document.getElementsByName('newscheck')[0].style="display:inline;";
+
+			document.getElementsByName('forget')[0].style="display:none;";
+			document.getElementsByName('agree')[0].style="display:inline;";
+
+
+			
+			document.getElementsByName('e')[0].id="register";
+			document.getElementsByName('r')[0].id="enter";
+
+
+			
+  		    
+		}
+
+	   function ent(){
+	   		document.getElementsByName('input1')[0].placeholder='شماره همراه یا ایمیل';
+			document.getElementsByName('input1')[0].required="required";
+
+			document.getElementsByName('input2')[0].style="display:none;";	
+			document.getElementsByName('input2')[0].placeholder='نام خانوادگی';
+			document.getElementsByName('input2')[0].required="required";
+
+			document.getElementsByName('input3')[0].style="display:none;";	
+			document.getElementsByName('input3')[0].required="required";
+
+			document.getElementsByName('news')[0].style="display:none;";
+			document.getElementsByName('newscheck')[0].style="display:none;";
+
+			document.getElementsByName('forget')[0].style="display:inline;";
+			document.getElementsByName('agree')[0].style="display:none;";
+			
+		document.getElementsByName('e')[0].id="enter";
+			document.getElementsByName('r')[0].id="register";
+			
+
+
+	   }
+	</script>
+</head>
+<body>
+	
+
+	<div class="form1">
+		<div name="e" id="enter" onclick="ent()">ورود</div>
+		<div name="r" id="register" onclick="reg()">ثبت‌نام</div>
+		<div class="exit"><a href="kilid.html"><img class="cross" src="cross.png"></a></div>
+
+		<form class="form2">
+		<div ><input  required="" name="input1"  placeholder="شماره همراه یا ایمیل" type="text"></div>
+
+		<div><input  required="" name="input2"   type="text" style="display: none;">	</div>
+
+		<div ><input required="" name="input3"  placeholder="شماره همراه یا ایمیل" type="text" style="display: none;"></div>
+		<div ><input required="" name="input4"  placeholder="رمز عبور" type="password" ></div>
+		<div><span  name="forget">رمز خود را <a href="" class="forget">فراموش کرده ‌اید؟</a></span>
+		<label name="news" style="display: none;">دریافت خبرنامه</label>
+		<input  name="newscheck" style="display: none;" type="checkbox" id="checkbox" value=""> 
+		<div><span name="agree" style="display: none;" class="terms">ثبت نام به معنی قبول <a class="link" target="_blank" href="/terms">قوانین و مقررات</a> است</span></div>
+			
+		</div><button class="send"  data-track="{category: 'click', action: 'Sign In'}" type="submit">ارسال</button></form>	
+
+
+
+		</form>
+		
+
+	</div>
+</body>
+</html>
