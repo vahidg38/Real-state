@@ -1,0 +1,17 @@
+CREATE TABLE house (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+creator varchar(255),    
+title VARCHAR(2000) ,
+price INT(50),
+type varchar(255),
+    area int(30),
+    bedrooms int(30),
+    parkings int(30),
+    locality varchar(2000),
+    
+     pic varchar(5000) ,
+    estate varchar(2000),
+    star boolean,
+
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+)

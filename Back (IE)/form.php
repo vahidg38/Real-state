@@ -1,0 +1,7 @@
+<?php
+header();
+
+echo "he";
+
+?>
+
